@@ -14,7 +14,7 @@ app.use((req,res,next)=>{
 app.use(express.json())
 app.use(cors({
     origin:["https://airdyna-client2.vercel.app/"],
-    methods: ["GET","POST","PUT","DELETE"],
+    methods: ["GET","POST","PATCH","DELETE"],
     Credentials:true
 }))
 app.use('/api/workouts',workoutRoutes)
